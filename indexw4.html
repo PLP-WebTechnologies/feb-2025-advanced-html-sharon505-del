@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML5 Assignment</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid white;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+
+    input, select, textarea {
+      margin: 5px 0;
+      padding: 5px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .form-section {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HTML5 Elements and Forms Assignment</h1>
+
+  <!-- Ordered List with Roman Numerals -->
+  <h2>Roman Numerals List</h2>
+  <ol type="I">
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+  </ol>
+
+  <!-- External Image from Pexels -->
+  <h2>External Image</h2>
+  <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg" alt="Sample Image from Pexels" width="400">
+
+  <!-- Table with Contacts -->
+  <h2>Contact List</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Mobile</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>Jane Doe</td>
+      <td>Nairobi</td>
+      <td>0712345678</td>
+      <td>jane@example.com</td>
+    </tr>
+    <tr>
+      <td>John Smith</td>
+      <td>Mombasa</td>
+      <td>0723456789</td>
+      <td>john@example.com</td>
+    </tr>
+    <tr>
+      <td>Alice W.</td>
+      <td>Kisumu</td>
+      <td>0734567890</td>
+      <td>alice@example.com</td>
+    </tr>
+    <tr>
+      <td>Brian O.</td>
+      <td>Nakuru</td>
+      <td>0745678901</td>
+      <td>brian@example.com</td>
+    </tr>
+    <tr>
+      <td>Clara M.</td>
+      <td>Eldoret</td>
+      <td>0756789012</td>
+      <td>clara@example.com</td>
+    </tr>
+  </table>
+
+  <!-- Registration Form -->
+  <h2>Registration Form</h2>
+  <div class="form-section">
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter a password" required minlength="6">
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
+
+      <label for="course">Course:</label>
+      <select id="course" name="course" required>
+        <option value="">Select a course</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+      </select>
+
+      <label>Interests:</label>
+      <input type="checkbox" id="coding" name="interests" value="coding">
+      <label for="coding">Coding</label>
+      <input type="checkbox" id="design" name="interests" value="design">
+      <label for="design">Design</label>
+      <input type="checkbox" id="gaming" name="interests" value="gaming">
+      <label for="gaming">Gaming</label>
+
+      <br><br>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+</body>
+</html>
